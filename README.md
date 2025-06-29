@@ -2,7 +2,7 @@
 
 **Feedback Analyzer** is a Python-based web application designed to analyze customer feedback using Natural Language Processing (NLP) and Machine Learning. It classifies feedback by **sentiment** and **department**, providing meaningful visualizations and exports for improved organizational insight.
 
-## 🚀 Features
+##  Features
 
 - Upload and analyze customer feedback from CSV files.
 - Department classification using a pre-trained ML model.
@@ -12,16 +12,16 @@
 - Logging for debugging and monitoring.
 - Automated testing with Pytest.
 
-## 🧠 Tech Stack
+##  Tech Stack
 
-- **Backend:** Flask (via `app.py`)
+- **Backend:** streamlit (via `app.py`)
 - **ML/NLP:** scikit-learn, VADER SentimentIntensityAnalyzer
 - **Data Processing:** pandas, NumPy
 - **Visualization:** Matplotlib, Seaborn, Plotly
 - **Testing:** Pytest
 - **Model Storage:** Pickle (`department_model.pkl`)
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 feedback analyzer code/
@@ -41,7 +41,7 @@ feedback analyzer code/
 └── .pytest_cache/               # Pytest cache directory
 ```
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ### 3. Run the Application
 
 ```bash
-python app.py
+streamlit run app.py
 ```
 
 Access the app at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
@@ -70,7 +70,7 @@ Access the app at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 pytest
 ```
 
-## 📝 Sample Input
+##  Sample Input
 
 Ensure your CSV file (`department_feedback.csv`) follows this format:
 
@@ -81,17 +81,17 @@ Feedback
 ...
 ```
 
-## 📤 Output
+##  Output
 
 - Categorized and sentiment-tagged feedback
 - Exported CSV file for download
 - Visualization dashboard in browser
 
-## 🔒 Notes
+##  Notes
 
 - The department classification model (`department_model.pkl`) is already trained.
 - Make sure input data is cleaned (no null values) for optimal results.
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License.
